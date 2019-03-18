@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { MailComponent } from './mail/mail.component';
 
-//import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  //{ path: '', component: AppComponent},
+  { path: 'mail', component: MailComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class ExtensionRoutingModule { }
