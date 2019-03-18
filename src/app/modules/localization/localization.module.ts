@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { InformationComponent } from './information/information.component';
 import { LocalizationRoutingModule } from './localization-routing.module'
+// import { MaterialModule} from '../../shared/Material/material.module';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { LocalizationRoutingModule } from './localization-routing.module'
   ],
   imports: [
     LocalizationRoutingModule,
+    // MaterialModule
   ]
 })
 

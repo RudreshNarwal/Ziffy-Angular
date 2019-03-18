@@ -4,10 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { AmenitiesComponent } from './amenities/amenities.component';
 import { InformationComponent } from './information/information.component';
 
-
+// Nested Routing
 const routes: Routes = [
-  { path: 'amenities', component: AmenitiesComponent},
-  { path: 'information', component: InformationComponent},
+  { path: 'localization', 
+      children: [
+        { path: 'amenities', component: AmenitiesComponent},
+        { path: 'information', component: InformationComponent},
+      ]
+  },
 ];
 
 @NgModule({

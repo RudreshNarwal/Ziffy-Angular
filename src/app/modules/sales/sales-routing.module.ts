@@ -7,8 +7,12 @@ import { LeadsComponent } from './leads/leads.component'
 
 
 const routes: Routes = [
-  { path: 'lead', component: LeadsComponent},
-  { path: 'lead-owners', component: LeadOwnersComponent},
+  { path: 'sales',
+        children: [
+          { path: 'leads', component: LeadsComponent},
+          { path: 'lead-owners', component: LeadOwnersComponent},
+          ]
+  },
 ];
 
 @NgModule({

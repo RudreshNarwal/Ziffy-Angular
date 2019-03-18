@@ -8,8 +8,12 @@ import { PropertyOverviewComponent } from './property-overview/property-overview
 
 
 const routes: Routes = [
-  { path: 'hot-properties', component: HotPropertiesComponent},
-  { path: 'property-overview', component: PropertyOverviewComponent},
+  { path: 'reports',
+        children: [
+          { path: 'hot-properties', component: HotPropertiesComponent},
+          { path: 'property-overview', component: PropertyOverviewComponent},
+        ]
+  },
 ];
 
 @NgModule({
